@@ -77,17 +77,12 @@ function Home() {
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
                 
                 <div className="relative z-10">
-                  <div className="flex justify-between items-center mb-4 md:mb-6">
-                    <Icon className="w-8 h-8 md:w-12 md:h-12 opacity-80 text-white/90" />
-                    <span className="text-xs md:text-sm bg-white/20 px-2 py-1 md:px-3 md:py-1 rounded-full">
-                      Interactive
-                    </span>
-                  </div>
+
                   
                   <h3 className="text-2xl md:text-3xl font-bold mb-2 md:mb-4">{card.title}</h3>
                   <p className="text-xs md:text-sm opacity-80 mb-4 md:mb-6">{card.description}</p>
                   
-                  <div className="space-y-1 md:space-y-2 mb-4 md:mb-6 hidden md:block">
+                  <div className="space-y-1 border-2 border-black md:space-y-2 mb-4 md:mb-6 hidden md:block">
                     {card.features.map((feature, index) => (
                       <div 
                       key={index} 
@@ -101,13 +96,7 @@ function Home() {
                   </div>
                 </div>
                 
-                <div className="relative z-10">
-                  <div className="inline-flex items-center text-xs md:text-sm font-medium 
-                    bg-white bg-opacity-20 hover:bg-opacity-30 
-                    px-3 py-2 md:px-5 md:py-3 rounded-full transition-all group-hover:translate-x-2">
-                    Explore Project →
-                  </div>
-                </div>
+          
               </div>
             );
           })}
@@ -116,7 +105,6 @@ function Home() {
         <footer className="mt-12 md:mt-16 text-center text-gray-500">
           <p className="text-xs md:text-sm">
             © {new Date().getFullYear()} React Libraries. 
-            Crafted with ❤️ and Tailwind CSS
           </p>
         </footer>
       </div>
