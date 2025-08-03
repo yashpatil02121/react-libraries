@@ -84,8 +84,8 @@ const styles = {
     margin: '20px',
     borderRadius: '20px',
     boxShadow: '0 4px 15px rgba(0,0,0,0.15)',
-    maxWidth: '95%',
-    width: '80%',
+    maxWidth: '100%',
+    width: '100s%',
   },
   infoCard: {
     backgroundColor: 'white',
